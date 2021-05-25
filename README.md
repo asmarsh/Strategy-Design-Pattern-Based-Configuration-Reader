@@ -1,4 +1,5 @@
 ![Build Status](https://github.com/asmarsh/Strategy-Design-Pattern-Based-Configuration-Reader/actions/workflows/build.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=asmarsh_Strategy-Design-Pattern-Based-Configuration-Reader&metric=alert_status)](https://sonarcloud.io/dashboard?id=asmarsh_Strategy-Design-Pattern-Based-Configuration-Reader)
 
 Strategy-Design Pattern Based Configuration Reader
 
