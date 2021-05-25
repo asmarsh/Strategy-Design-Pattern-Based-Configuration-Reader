@@ -1,3 +1,5 @@
+![Build Status](https://github.com/asmarsh/Strategy-Design-Pattern-Based-Configuration-Reader/actions/workflows/build.yml/badge.svg)
+
 Strategy-Design Pattern Based Configuration Reader
 
 Create a new program based on Assignment #2 that utilizes the Strategy design pattern to obtain an
