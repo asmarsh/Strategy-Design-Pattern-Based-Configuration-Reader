@@ -10,12 +10,11 @@ namespace Strategy
     {
         private static void Main(string[] args)
         {
-            IConfigurationReader reader = new ConfigurationReader();
-            string value = reader.Read("ABC");
-            Console.WriteLine($"ABC=>{value}");
-            reader = new ConnectionReader();
-            value = reader.Read("db");
-            Console.WriteLine($"db=>{value}");
+            var readers = new List<IConfigurationReader>() { new ConfigurationReader(), new ConnectionReader() };
+            foreach (var reader in readers)
+            {
+                Console.WriteLine(reader.Read("value"));
+            }
 
             Console.ReadKey();
         }
