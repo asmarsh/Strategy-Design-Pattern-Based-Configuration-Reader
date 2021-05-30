@@ -13,6 +13,8 @@ namespace Strategy
             var readers = new List<IConfigurationReader>() { new ConfigurationReader(), new ConnectionReader() };
             foreach (var reader in readers)
             {
+                Console.WriteLine($"reading with {reader.GetType().Name}");
+
                 Console.WriteLine(reader.Read("value"));
             }
 
