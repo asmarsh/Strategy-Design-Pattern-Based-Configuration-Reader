@@ -10,7 +10,8 @@ namespace Strategy
     {
         private static void Main(string[] args)
         {
-            var readers = new List<IConfigurationReader>() { new ConfigurationReader(), new ConnectionReader() };
+            var factory = new ReaderFactory();
+            var readers = new List<IConfigurationReader>() { factory.GetReader("ConfigurationReader"), factory.GetReader("ConnectionReader") };
             foreach (var reader in readers)
             {
                 Console.WriteLine($"reading with {reader.GetType().Name}");
