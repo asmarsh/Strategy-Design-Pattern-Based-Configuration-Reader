@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    internal class ReaderFactory
+    public class ReaderFactory
     {
         public IConfigurationReader GetReader(string readerType)
         {
