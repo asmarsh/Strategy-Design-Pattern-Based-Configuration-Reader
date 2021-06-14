@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    internal interface IConfigurationReader
+    public interface IConfigurationReader
     {
         string Read(string key);
     }
